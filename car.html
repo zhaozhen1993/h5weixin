@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/list.css" />
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</head>
+	<body>
+		<div class="breadCrumb clearfix">
+			<p class="clearfix">
+				<span class=" glyphicon glyphicon-menu-left"></span><span>返回</span>
+				<span>购物车</span>
+			</p>
+		</div>
+		<div class="car_menu">
+			<ul class="list-group clearfix">
+				<li class="list-group-item"> 
+					<input type="checkbox" class="check" id="" value="" />
+					<img src="img/ad02.png" class="img-responsive" />
+					<div class="menu_right pull-right">
+						<p>纯银镶金钻吉和艺术纳米绿色环保手链</p>
+						<span class="pull-left pr">￥</span><span class="pull-left price">2300.00</span>
+						<div class="num pull-right">
+							<span class="down">—</span>
+							<span class="num_n"><input type="text" value="1"/></span>
+							<span class="pull-right up">+</span>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item"> 
+					<input type="checkbox" class="check" id="" value="" />
+					<img src="img/ad02.png" class="img-responsive" />
+					<div class="menu_right pull-right">
+						<p>纯银镶金钻吉和艺术纳米绿色环保手链</p>
+						<span class="pull-left pr">￥</span><span class="pull-left price">2309.00</span>
+						<div class="num pull-right">
+							<span class="down">—</span>
+							<span class="num_n"><input type="text" value="1"/></span>
+							<span class="pull-right up">+</span>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item"> 
+					<input  type="checkbox" class="check " id="" value="" />
+					<img src="img/ad02.png" class="img-responsive" />
+					<div class="menu_right pull-right">
+						<p>纯银镶金钻吉和艺术纳米绿色环保手链</p>
+						<span class="pull-left pr">￥</span><span class="pull-left price">2301.00</span>
+						<div class="num pull-right">
+							<span class="down ">—</span>
+							<span class="num_n"><input type="text" value="1"/></span>
+							<span class="pull-right up">+</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="total ">
+			<div class="checkd">
+				<input type="checkbox" class="check" id="" value="" />
+				全选
+			</div>
+			
+			<p >合计：￥<span class="total_price">2302.00</span></p>
+			<span class="price_total pull-right">去结算</span>
+		</div>
+		<footer class="clearfix ">
+			<ul class="clearfix">
+				<li >
+					<a href="index.html" class="img-responsive"></a>
+					<a  href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="list.html" class="img-responsive"></a>
+					<a  href="list.html">商品分类</a>
+				</li>
+				<li>
+					<a href="car.html" class="img-responsive"></a>
+					<a class="activ" href="car.html">购物车</a>
+				</li>
+				<li>
+					<a href="center.html" class="img-responsive"></a>
+					<a href="center.html" >会员中心</a>
+				</li>
+			</ul>
+		</footer>
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						if(clientWidth >= 750) {
+							docEl.style.fontSize = '100px';
+						} else {
+							docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+						}
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		   window.onload=function(){
+		   	var checkSingle=$('.list-group-item .check');
+		   	var checkAll=$('.total .check');
+		   	var price=$('.list-group-item .price');
+		   	var down=$('.list-group-item .down');
+		   	var num=$('.list-group-item .num_n input');
+		   	var up=$('.list-group-item .up');
+		   	var total=$('.total_price');
+		   	var totalSingle=0;
+		   	var n=0;
+		   	checkAll[0].onclick=function(){
+		   		
+		    for(var i=0;i<checkSingle.length;i++){
+			checkSingle[i].checked=this.checked;
+			if(this.checked){
+				checkSingle[i].classList.add('checked');
+				checkAll[0].classList.add('checked');
+				
+			}else{
+				checkSingle[i].classList.remove('checked');
+				checkAll[0].classList.remove('checked');
+				
+			}
+		   }
+		    count();
+	      }
+		   for(var i=0;i<checkSingle.length;i++){
+		   		checkSingle[i].btn=false;
+		   		up[i].index=i;
+		   		down[i].index=i;
+		   	checkSingle[i].onclick=function(){
+		   		
+		   	var n=0;
+		   	count();
+		   	if(!this.checked){
+		   		checkAll[0].checked=false;
+		   		checkAll[0].classList.remove('checked');
+		   		this.classList.remove('checked');
+		   	}else{
+		   		this.classList.add('checked');
+		   		for(var j=0;j<checkSingle.length;j++){
+		   			if(checkSingle[j].checked){
+		   				n++;
+		   			}
+		   		}
+		   		if(n==checkSingle.length){
+		   			checkAll[0].chekked=true;
+		   		    checkAll[0].classList.add('checked');
+		   		}
+		   		
+		   	}
+		   
+		   }
+		   	
+		   	up[i].onclick=function(){
+		   		var value=num[this.index].value;
+		   		value++;
+		   		num[this.index].value=value;   
+		   		down[this.index].classList.remove('disabled');
+		   		
+		   		 count();	
+		        }
+		       
+		    down[i].onclick=function(){
+		   		var value=num[this.index].value;
+		   		value--;
+		   		if(value<=0){
+		   			value=0;
+		   			down[this.index].classList.add('disabled');
+		   		}
+		   		num[this.index].value=value;     	   
+		   	       count();	
+		        }
+		 
+		   }
+		  count();
+		  
+		 
+		   function count(){
+		   	var arrT=[];
+		   	for(var i=0;i<num.length;i++){
+		   			totalSingle=num[i].value*price[i].innerText;
+		   	    
+		   	    arrT.push(totalSingle)
+		   	   
+		   	}
+		   	
+		     var all=0;
+		      for(let i=0;i<checkSingle.length;i++){
+		      	if(checkSingle[i].checked){
+		      		all+=arrT[i];
+		      		console.log(all)
+		      	}
+		      }
+		     total[0].innerText=all.toFixed(2);
+		   }
+		   
+		   
+		   
+		   
+		   
+		   
+		  
+		}
+		</script>
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

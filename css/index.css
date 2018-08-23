@@ -1,0 +1,273 @@
+
+body{
+	max-width: 750px;
+	margin: 0 auto;
+	
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+form .input-group-addon{
+	background: none;
+	border: none;
+}
+form .input-group-lg{
+	padding: 0.12rem 0;
+	margin: 0 0.28rem;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+form .form-control{
+	border: none;
+	color: #b2b2b2;
+	margin-left: -0.16rem;
+	outline: none !important;
+	margin-top: 6px;
+	font-size: 0.14rem !important;
+	box-shadow: none;
+}
+form .glyphicon{
+	color: #b2b2b2;
+	font-size: 14px !important;
+}
+.limit{
+	max-width: 750px;
+}
+.menu .img-responsive{
+	margin: 0 auto;
+	margin-top: 0.56rem;
+	margin-bottom: 0.35rem;
+}
+.menu .col-xs-3{
+	font-size: 12px;
+	text-align: center;
+	padding-bottom: 0.36rem;
+}
+.clear_k{
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	padding-left: 0;
+	padding-right: 0;
+	background: #f7f7f7;
+}
+.clear_k .row{
+	background: #ffffff;
+	margin-left: 0;
+	margin-right: 0;
+}
+.ads{
+	background: #FFFFFF;
+	margin-bottom: 0.1rem;
+}
+.ads_1{
+	width:3.6rem;
+	float: left;
+}
+.ads_2{
+	width: 3.8rem;
+	float: right;
+}
+.ads_2_2{
+	margin-top: 0.1rem;
+}
+
+.adv{
+	padding-bottom: 0.25rem;
+	overflow: hidden;
+	background: #FFFFFF;
+}
+.adg .slide2{
+	width: 10rem;
+	height: 100%;
+	background: #FFFFFF;
+	position: absolute;
+	left: 0;
+}
+.adg{
+	height: 3.94rem;
+	width: 7.5rem;
+	overflow: hidden;
+	position: relative;
+}
+.adg .slide2{
+	width: 10rem;
+		
+}
+.adg .slide_btn{
+	float: left;
+	width: 2.31rem;
+	height: 2.31rem;
+	text-align: center;
+	background: #f5f5f5;
+	margin-left: 0.19rem;
+}
+.adg .slide_btn span{
+	display: block;
+	font-size: 0.37rem;
+	letter-spacing: 0.05rem;
+	font-family: 'Nunito', sans-serif;
+	color: #b3b3b3;
+	margin-top: 0.7rem;
+	margin-bottom: 0.3rem;
+}
+.adg .slide_btn a{
+	color:#6b6b6b;
+}
+.adg_{
+	background: #FFFFFF;
+	width: 2.5rem;
+	float: left;
+	padding-left: 0.19rem;
+	text-align: center;
+}
+.adg .title_banner{
+	font-size: 0.24rem;
+	display: block;
+	margin-top: 0.3rem;
+	margin-bottom: 0.28rem;
+	color: #606060;
+	
+}
+.adg .price{
+	font-family: arial;
+	display: block;
+	margin-bottom: 0.4rem;
+	font-size: 0.22rem;
+}
+.recommend{
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: 2rem;
+}
+.nav-tabs > li > a{
+	border: none;
+}
+.nav > li > a:hover{
+	background: none !important;
+}
+.recommend .h3{
+	font-size: 0.4rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.35rem;
+	
+}
+.recommend .slect{
+	
+	border-top: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.act{
+	border-bottom: 2px solid #000000;
+	
+}
+.recommend .navTabs{
+	padding-left: 0;
+	margin-bottom: 0;
+}
+.recommend .navTabs li{
+	float: left;
+	text-align: center;
+	
+	width: 2.5rem;
+	height: 0.9rem;
+}
+.recommend .navTabs li a{
+	line-height: 0.9rem;
+	margin: 0 auto;
+	width: 1rem;
+	height: 0.9rem;
+	display: block;
+	font-size: 0.26rem;
+	color: #000000;
+	text-decoration: none;
+}
+.abbreviations{
+	margin-top: 0.2rem;
+}
+.list_ad{
+	padding-left: 0;
+}
+.list_ad .img-responsive{
+	border: 1px solid #dbdbdb;
+	
+}
+.list_ad li{
+	width: 3.28rem;
+	margin-left: 0.3rem;
+	float: left;
+	text-align: center;
+}
+.list_ad li span{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 3.28rem;
+	display: block;
+	white-space: nowrap;
+	
+	
+}
+.list_ad .title_ad{
+	margin-top: 0.3rem;
+	margin-bottom: 0.3rem;
+	color: #939393;
+	font-size: 0.26rem;
+}
+.list_ad .price_ad{
+	color: #000000;
+	font-size: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 7.5rem;
+	height: 0.98rem;
+	margin: 0 auto;
+	background: #ffffff;
+}
+footer ul{
+	padding: 0;
+	/*margin-left: 0.15rem;
+	margin-right: 0.15rem;*/
+	text-align: center;
+}
+footer ul li{
+	padding-top: 0.12rem;
+	
+	float: left;
+	width: 1.8rem;
+	
+}
+footer ul li .img-responsive{
+	margin: 0 auto;
+	width: 0.4rem;
+	height: 0.4rem;
+}
+footer ul li a{
+	
+	font-size: 0.2rem;
+	color: #b3b3b3;
+}
+footer .activ{
+	color: #000000;
+}
+footer ul li:nth-child(1) a:nth-child(1){
+	background: url(../img/foot01.png) no-repeat;
+	background-size: 0.4rem 0.4rem;
+}
+footer ul li:nth-child(2) a:nth-child(1){
+	background: url(../img/foot02.png) no-repeat;
+	background-size: 0.4rem 0.4rem;
+}
+footer ul li:nth-child(3) a:nth-child(1){
+	background: url(../img/foot03.png) no-repeat;
+	background-size: 0.4rem 0.4rem;
+}
+footer ul li:nth-child(4) a:nth-child(1){
+	background: url(../img/foot04.png) no-repeat;
+	background-size: 0.4rem 0.4rem;
+}

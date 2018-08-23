@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/list.css" />
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body style="background: #f7f7f7;">
+		<div class="breadCrumb clearfix" style="background: #ffffff"; >
+			<p class="clearfix">
+				<span class=" glyphicon glyphicon-menu-left"></span><span>返回</span>
+				<span >个人中心</span>
+			</p>
+		</div>
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title">手机号登录</h3>
+					</div>
+					<div class="modal-body">
+						<input type="text" value="" placeholder="手机号" />
+						<input type="text" value="" placeholder="验证码" />
+						<a class="code" href="#">获取验证码</a>
+					</div>
+					<div class="modal-footer">
+						<input type="button" value="登录" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="use" data-toggle="modal" data-target = "#myModal">
+			<a class="use_img" href="javascript:;"><img src="img/icon-6.png" class="img-responsive"/></a>
+		    <span>未登录</span>
+		</div>
+		<div class="use_list">
+			<ul>
+				<li>
+					<a href="#">
+						<img src="img/icon-1.png" class="img-responsive" />
+					    <span>全部订单</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/icon-2.png" class="img-responsive" />
+					    <span>待支付</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/icon-3.png" class="img-responsive" />
+					    <span>已完成</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/icon-4.png" class="img-responsive" />
+					    <span>待收货</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/icon-5.png" class="img-responsive" />
+					    <span>售后</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="use_list-item">
+			<ul>
+				<li>
+					<p>
+						<a href="#">我的地址</a>
+						<span class="glyphicon glyphicon-menu-right"></span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<a href="#">联系客服</a>
+						<span class="glyphicon glyphicon-menu-right"></span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<a href="#">用户反馈</a>
+						<span class="glyphicon glyphicon-menu-right"></span>
+					</p>
+				</li>
+			</ul>
+		</div>
+		<footer class="clearfix ">
+			<ul class="clearfix">
+				<li >
+					<a href="index.html" class="img-responsive"></a>
+					<a  href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="list.html" class="img-responsive"></a>
+					<a  href="list.html">商品分类</a>
+				</li>
+				<li>
+					<a href="car.html" class="img-responsive"></a>
+					<a href="car.html">购物车</a>
+				</li>
+				<li>
+					<a href="center.html" class="img-responsive"></a>
+					<a class="activ" href="center.html">会员中心</a>
+				</li>
+			</ul>
+		</footer>
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						if(clientWidth >= 750) {
+							docEl.style.fontSize = '100px';
+						} else {
+							docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+						}
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
